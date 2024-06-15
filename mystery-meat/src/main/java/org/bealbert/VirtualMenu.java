@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MysteryMeat {
+public class VirtualMenu {
 
-    private static List<String> categories = new ArrayList<>();
+    private static final List<String> categories = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
     private static void setCategories() {
         categories.add("FFXIV");
@@ -22,10 +22,8 @@ public class MysteryMeat {
     }
 
     public static void main(String[] args) {
-        MysteryMeat mysteryMeat = new MysteryMeat();
-        mysteryMeat.run();
-
-
+        VirtualMenu virtualMenu = new VirtualMenu();
+        virtualMenu.run();
     }
 
     public void run() {
@@ -57,10 +55,14 @@ public class MysteryMeat {
                 int itemNum = 1;
 
                 //if product input is 1: list ff14 items
+                //do i need a class that is ff14 that implements the class "category"?? i think i might
+            } else if (productInput.equals("2")) {
+
             }
         } else if (userInput.equals("2")) {
 
             //list items added to shopping cart, include total of all prices added together
+            //call a method from shopping cart class to do this
         } else if(userInput.equals("3")) {
             //view artist profiles
             System.out.println("Artists: ");
