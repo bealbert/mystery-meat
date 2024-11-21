@@ -1,9 +1,15 @@
 <template>
-  <div>
+  <section>
 
     <slideshow-component></slideshow-component>
-
-  </div>
+    <div>
+      <ul>
+        <li>Willohwitch</li>
+        <li>Kaijujungle</li>
+        <li>Three Rat Moon</li>
+      </ul>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -16,4 +22,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+body {
+  background-image: url('../assets/MM_BACKGROUND_BLANK_1.png.png');
+}
+</style>
